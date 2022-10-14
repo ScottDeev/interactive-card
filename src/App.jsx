@@ -86,7 +86,7 @@ function App() {
   }
 
   // Function that handle error on submit. This set the success to be false and prevent form submission
-  const handleSubmitError = (setError, setErrorMsg, msg="Can't blank") => {
+  const handleSubmitError = (setError, setErrorMsg, msg="Can't be blank") => {
     setError(true)
     setSuccess(false)
     setErrorMsg(msg)
