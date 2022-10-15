@@ -7,7 +7,8 @@ module.exports = {
     extend: {
       colors: {
         'ui-white': 'hsl(0, 0%, 100%)',
-        'error': 'hsl(0, 100%, 66%)'
+        'error': 'hsl(0, 100%, 66%)',
+        'correct': 'hsl(249, 99%, 64%)'
       },
       backgroundImage: {
         cardFrontBg: "url('/src/assets/bg-card-front.png')",

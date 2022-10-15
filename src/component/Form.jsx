@@ -29,7 +29,7 @@ export default function Form({
           <label className="flex flex-col">
             <span>CARDHOLDER NAME</span>
             <input type="text" 
-              className={`${errorCN ? 'border-error' : ''}`} 
+              className={`${errorCN ? 'border-error' : 'focus:border-correct'}`} 
               placeholder="Jane Appleseed"
               onChange={(e) => {handleChangeCN(e)}}
             />
@@ -38,7 +38,7 @@ export default function Form({
           <label className="flex flex-col">
             <span>CARD NUMBER</span>
             <input
-              className={`${errorCNumber ? 'border-error' : ''}`} 
+              className={`${errorCNumber ? 'border-error' : 'focus:border-correct'}`} 
               type="text" 
               placeholder='e.g. 1234 5678 9123 0000'
               maxLength="16"
@@ -51,14 +51,14 @@ export default function Form({
               <span>EXP. DATE(MM/YY)</span>
               <div className="flex flex-row gap-[10px]">
                 <input
-                  className={`${errorEM ? 'border-error' : ''} w-1/2`}
+                  className={`${errorEM ? 'border-error' : 'focus:border-correct'} w-1/2`}
                   type="text" 
                   placeholder='MM'
                   maxLength="2"
                   onChange={(e) => {handleChangeExpMonth(e)}}
                 />
                 <input 
-                   className={`${errorEY ? 'border-error' : ''} w-1/2`}
+                   className={`${errorEY ? 'border-error' : 'focus:border-correct'} w-1/2`}
                   type="text" 
                   placeholder='YY'
                   maxLength="2"
@@ -70,7 +70,7 @@ export default function Form({
             <label className="flex flex-col w-1/2">
               <span>CVC</span>
               <input 
-                className={`${errorCVC ? 'border-error' : ''}`}
+                className={`${errorCVC ? 'border-error' : 'focus:border-correct'}`}
                 type="text" 
                 placeholder='123'
                 maxLength="3"

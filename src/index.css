@@ -8,9 +8,7 @@ input{
   padding: 8px;
   outline: none;
 }
-input:focus{
-  border: 1px solid linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
-}
+
 label{
   gap: 5px;
 }
